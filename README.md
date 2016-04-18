@@ -13,7 +13,7 @@ RxUnsplashSource.random(size: UIScreen.mainScreen().bounds.size)
     .bindTo(imageView.rx_image)
 ```
 
-- Get random photo
+- Get random photo from category
 
 ```swift
 RxUnsplashSource
