@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/muukii/RxUnsplashSource"
   s.license          = 'MIT'
   s.author           = { "muukii" => "m@muukii.me" }
-  s.source           = { :git => "https://github.com/muukii/RxUnsplashSorce.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/muukii/RxUnsplashSource.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/muukii0803'
 
   s.ios.deployment_target = '8.0'
