@@ -23,34 +23,35 @@ public enum RxUnsplashSource {
     }
     
     public enum Fixed: String {
+        case None = ""
         case Daily = "daily"
         case Weekly = "weekly"
     }
     
-    public static func random(fixed: Fixed?, size: CGSize) -> Observable<UIImage> {
+    public static func random(fixed: Fixed = .None, size: CGSize) -> Observable<UIImage> {
         
-        let url = self.baseURL.append("/\(fixed?.rawValue)")
-        
-        return self.getImage(url, size)
-    }
-    
-    public static func random(category category: Category, fixed: Fixed?, size: CGSize) -> Observable<UIImage> {
-        
-        let url = self.baseURL.append("category/\(category.rawValue)").append("/\(fixed?.rawValue)")
+        let url = self.baseURL.append("/\(fixed.rawValue)")
         
         return self.getImage(url, size)
     }
     
-    public static func random(user username: String, fixed: Fixed?, size: CGSize) -> Observable<UIImage> {
+    public static func random(category category: Category, fixed: Fixed = .None, size: CGSize) -> Observable<UIImage> {
         
-        let url = self.baseURL.append("/user/\(username)").append("/\(fixed?.rawValue)")
+        let url = self.baseURL.append("category/\(category.rawValue)").append("/\(fixed.rawValue ?? "")")
         
         return self.getImage(url, size)
     }
     
-    public static func random(userslikes username: String, fixed: Fixed?, size: CGSize) -> Observable<UIImage> {
+    public static func random(user username: String, fixed: Fixed = .None, size: CGSize) -> Observable<UIImage> {
         
-        let url = self.baseURL.append("/user/\(username)/likes").append("/\(fixed?.rawValue)")
+        let url = self.baseURL.append("/user/\(username)").append("/\(fixed.rawValue)")
+        
+        return self.getImage(url, size)
+    }
+    
+    public static func random(userslikes username: String, fixed: Fixed = .None, size: CGSize) -> Observable<UIImage> {
+        
+        let url = self.baseURL.append("/user/\(username)/likes").append("/\(fixed.rawValue)")
         
         return self.getImage(url, size)
     }
@@ -115,7 +116,7 @@ private extension NSURL {
 
 private extension CGSize {
     private var queryString: String {
-        return "\(self.width)x\(self.height)"
+        return "\(Int(self.width))x\(Int(self.height))"
     }
 }
 

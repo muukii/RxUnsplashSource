@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CC93F015883D013F85E7630E6C3B9889117E2049",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CC93F015883D013F85E7630E6C3B9889117E2049" : 0,
+    "DDDE3C06D0BDDFFCC631D8AD2137228414CC6495" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "503EA147-B1A3-4311-8084-68770170CB20",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CC93F015883D013F85E7630E6C3B9889117E2049" : "RxUnsplashSource\/",
+    "DDDE3C06D0BDDFFCC631D8AD2137228414CC6495" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RxUnsplashSource",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RxUnsplashSource.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:muukii\/RxUnsplashSorce.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CC93F015883D013F85E7630E6C3B9889117E2049"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:muukii\/WallClock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DDDE3C06D0BDDFFCC631D8AD2137228414CC6495"
+    }
+  ]
+}
