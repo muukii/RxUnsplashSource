@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'RxUnsplashSource/*.swift'
-  s.dependency 'RxSwift', '~> 2.3.0'
+  s.dependency 'RxSwift', '~> 2.0'
 end
