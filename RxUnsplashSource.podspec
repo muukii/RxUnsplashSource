@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RxUnsplashSource"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Unsplash Source with RxSwift"
   s.description      = "Get high resolution image from Unsplash Source with RxSwift"
   s.homepage         = "https://github.com/muukii/RxUnsplashSource"
